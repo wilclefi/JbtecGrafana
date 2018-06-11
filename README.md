@@ -5,7 +5,7 @@
 
 Criar imagem com o docker file
 ```
- docker build -t jbtec/grafana
+ docker build -t jbtec/grafana .
 ```
 Inicar uma docker com a imagem criada:
 ```
