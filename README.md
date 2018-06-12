@@ -49,7 +49,7 @@ make  update-dashboards    # atualiza a lista de arquivos json que representam
 ```
 ```
 /update-dashboards.sh # arquivo que atualiza as deashboards do grafana. 
-                      # lembrese de alterar as url's caso você tenha alterado as 
+                      # lembre-se de alterar as url's caso você tenha alterado as 
                       # portas padrão do container.
                       # Rota Padrao: http://localhost:7000
 ```
