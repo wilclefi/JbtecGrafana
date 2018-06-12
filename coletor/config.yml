@@ -1,0 +1,10 @@
+{
+  "domain": "comercial.jbtec.com.br",
+  "postgres": {
+    "host": "172.17.0.218",
+    "port": 5432,
+    "db": "cm",
+    "user": "postgres",
+    "pass":":adm09db"
+  }
+}
