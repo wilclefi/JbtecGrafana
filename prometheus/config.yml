@@ -1,0 +1,18 @@
+global:
+  scrape_interval: '5s'
+  evaluation_interval: '5s'
+
+scrape_configs:
+
+  # `node` cuida de extrair dados do banco
+  # que nos fornece todo tipo de informação sobre as playlist
+  # e onde o exportador é executado.
+  - job_name: 'NodeWIll'
+    static_configs:
+
+  # Considerando que estamos testando apenas uma única instância
+  # nós sabemos o endereço muito bem, estaticamente defini-lo aqui
+  # com um rótulo de instância personalizada para que pareça melhor
+  # na interface do usuário (e métricas).
+      - targets:
+        - 'localhost:3000'

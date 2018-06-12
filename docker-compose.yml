@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+  # Prometheus usa a imagem mais atual.
+  # A pasta ./prometheus estara pegando e incluindo uma configuração de onde pegar metricas.
+  prometheus:
+    build: './prometheus'
+    container_name: 'Prometheus-Jbtec'
+    ports:
+      - 5050:9090
+
+  # O container do grafana usa a ultima imagem.
+  # A pasta ./grafana esta com configurações de deashboards, e do servidor de onde pegar os timestamps.
+  grafana:
+    build: './grafana'
+    container_name: 'Grafana-Jbtec'
+    ports:
+      - 7000:3000

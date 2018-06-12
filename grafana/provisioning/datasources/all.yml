@@ -1,0 +1,9 @@
+datasources:
+- name: 'Prometheus'
+  type: 'prometheus'
+  access: 'server'
+  org_id: 1
+  url: 'http://172.16.0.55:9090'
+  is_default: true
+  version: 1
+  editable: true
