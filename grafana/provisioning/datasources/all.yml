@@ -3,7 +3,7 @@ datasources:
   type: 'prometheus'
   access: 'server'
   org_id: 1
-  url: 'http://172.16.0.55:9090'
+  url: 'http://172.16.0.55:5050'
   is_default: true
   version: 1
   editable: true

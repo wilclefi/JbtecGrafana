@@ -14,11 +14,11 @@
 # URL especifica o URL da instância do Grafana.
 #
 apt-get update # Para atualizar os links
-apt-get install jq -y #Para instalar o jq - processador de JSons
+apt-get install jq -y #Para instalar o jq - Processador de Jsons
 
 set -o errexit
 
-readonly URL=${URL:-"http://localhost:4000"}
+readonly URL=${URL:-"http://localhost:7000"}
 readonly LOGIN=${LOGIN:-"admin:admin"}
 readonly PASTA_DASHBOARDS=${PASTA_DASHBOARDS:-"./grafana/dashboards"}
 
