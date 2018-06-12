@@ -30,8 +30,9 @@ make  update-dashboards    # atualiza a lista de arquivos json que representam
                      # provisioning, enable_gzip, default_theme
 ```
 ```
-/grafana/provisioning/datasources/all.yml # Configurações de onde o grafa ira pegar os dados em Time series 
-                                          # **Rota Padrao: http://172.16.0.55:5050**
+/grafana/provisioning/datasources/all.yml # Configurações de onde o grafa ira pegar os 
+                                          # dados em Time series 
+                                          # Rota Padrao: http://172.16.0.55:5050
 ```
 ```
 /grafana/dashboards/ # Configuração das deashboard que irão aparecer no granfana toda que estiverem aqui
@@ -39,14 +40,16 @@ make  update-dashboards    # atualiza a lista de arquivos json que representam
 ```
 ```
 /grafana/img/ # Imagens que são importadas para o grafa e subistituirão as imagens do grafana
-              # Lembrando que os arquivos precisam estar citados no dockerfile para serem exportados para a docker.
+              # Lembrando que os arquivos precisam estar citados no dockerfile 
+              # para serem exportados para a docker.
 ```
 ```
 /prometheus/config.yml # Configurações de onde o prometheus ira extrair as metricas. 
-                       # **Rota Padrao: localhost:3000**
+                       # Rota Padrao: localhost:3000
 ```
 ```
 /update-dashboards.sh # arquivo que atualiza as deashboards do grafana. 
-                      # lembrese de alterar as url's caso você tenha alterado as portas padrão do container.
-                      # **Rota Padrao: http://localhost:7000**
+                      # lembrese de alterar as url's caso você tenha alterado as 
+                      # portas padrão do container.
+                      # Rota Padrao: http://localhost:7000
 ```
