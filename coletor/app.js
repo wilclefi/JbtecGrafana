@@ -31,10 +31,9 @@ app.get('/coletor_one', (req, res) => {
     ],
   }).then(result => {
     var html = '';
-    var jsonString = JSON.stringify(result);
-
-      html += (`relatorio_1{id_playlist="`+jsonString+`"}`);
-    res.set('Content-type','text/plain').status(200).send(jsonString);
+    
+    html += (`relatorio_1{id_playlist="``"}`);
+    res.set('Content-type','text/plain').status(200).send(result);
   });
 });
 
