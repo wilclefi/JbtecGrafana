@@ -1,0 +1,13 @@
+version: 1.0
+services: 
+  postgres:
+    host: '172.17.0.218'
+    user: 'postgres'
+    pass: 'adm09db'
+    base: 'cm'
+  reports:
+    report_one: true
+    report_two: false
+    report_tree: false
+    report_four: false
+    report_five: false
